@@ -1,0 +1,26 @@
+{
+  "name": "spacex_launch_graphql",
+  "version": "1.0.0",
+  "description": "A GraphQL App that lists SpaceX launch missions; https://youtu.be/SEMTj8w04Z8",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "y ramhorry",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/client": "^3.3.6",
+    "axios": "^0.21.1",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
